@@ -1,0 +1,10 @@
+// ...
+@Injectable({ /* ... */ })
+export class BookStoreService {
+  // ...
+  /*BS*/create(book: Book): Observable<Book> {
+    return this.http
+      .post<Book>(`${this.apiUrl}/books`, book);
+  }/*BE*/
+}
+

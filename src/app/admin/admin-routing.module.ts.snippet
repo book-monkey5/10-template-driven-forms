@@ -1,0 +1,17 @@
+// ...
+/*BS*/import { BookCreateComponent } from './book-create/book-create.component';/*BE*/
+
+const routes: Routes = [/*BS*/
+  {
+    path: 'admin',
+    redirectTo: 'admin/create',
+    pathMatch: 'full'
+  },
+  {
+    path: 'admin/create',
+    component: BookCreateComponent,
+  }/*BE*/
+];
+
+@NgModule({ /* ... */ })
+export class AdminRoutingModule { }

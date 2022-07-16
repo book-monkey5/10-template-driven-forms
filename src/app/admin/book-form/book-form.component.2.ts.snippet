@@ -1,0 +1,15 @@
+import { Component, /*BS*/Output, EventEmitter/*BE*/ } from '@angular/core';
+
+import { Book } from '../../shared/book';
+
+@Component({ /* ...*/ })
+export class BookFormComponent {
+  // ...
+  /*BS*/@Output() submitBook = new EventEmitter<Book>();/*BE*/
+
+  constructor() {}
+
+  /*BS*/submitForm() {
+    this.submitBook.emit(this.book);
+  }/*BE*/
+}

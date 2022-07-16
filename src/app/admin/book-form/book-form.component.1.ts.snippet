@@ -1,0 +1,13 @@
+// ...
+/*BS*/import { Book } from '../../shared/book';/*BE*/
+
+@Component({ /* ...*/ })
+export class BookFormComponent {
+  /*BS*/book: Book = {
+    isbn: '',
+    title: '',
+    authors: ['']
+  };/*BE*/
+
+  constructor() {}
+}
