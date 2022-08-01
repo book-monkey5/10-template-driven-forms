@@ -5,8 +5,7 @@ import { BookCreateComponent } from './book-create/book-create.component';
 const routes: Routes = [
   {
     path: 'admin',
-    redirectTo: 'admin/create',
-    pathMatch: 'full'
+    redirectTo: 'admin/create'
   },
   {
     path: 'admin/create',
