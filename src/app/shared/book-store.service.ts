@@ -42,4 +42,3 @@ export class BookStoreService {
     return this.http.post<Book>(`${this.apiUrl}/books`, book);
   }
 }
-
