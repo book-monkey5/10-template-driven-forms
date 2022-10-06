@@ -16,8 +16,6 @@ export class BookFormComponent {
 
   @Output() submitBook = new EventEmitter<Book>();
 
-  constructor() {}
-
   submitForm() {
     this.submitBook.emit(this.book);
   }
